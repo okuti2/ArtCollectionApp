@@ -4,6 +4,7 @@ import { Row, Card, ListGroup, Button } from "react-bootstrap";
 import { useRouter } from "next/router";
 import styles from '@/styles/History.module.css'; 
 import { removeFromHistory } from "@/lib/userData";
+import LoadPage from "@/components/LoadPage";
 
 export default function History(prop){
     const [searchHistory, setSearchHistory] = useAtom(searchHistoryAtom);
@@ -41,7 +42,7 @@ export default function History(prop){
                     {parsedHistory.length > 0 &&
                         <ListGroup>
                             {parsedHistory.map((historyItem, index)=>(
-                                <ListGroup.Item onClick={e => historyClicked(e, index)}className={styles.historyListItem}>{Object.keys(historyItem).map(key => (<>{key}: <strong>{historyItem[key]}</strong>&nbsp;</>))}<Button className="float-end" variant="danger" size="sm"  onClick={e => removeHistoryClicked(e, index)}>&times;</Button> </ListGroup.Item>
+                                <ListGroup.Item key={historyItem.id}onClick={e => historyClicked(e, index)}className={styles.historyListItem}>{Object.keys(historyItem).map(key => (<>{key}: <strong>{historyItem[key]}</strong>&nbsp;</>))}<Button className="float-end" variant="danger" size="sm"  onClick={e => removeHistoryClicked(e, index)}>&times;</Button> </ListGroup.Item>
                                 
                             ))}
                         </ListGroup>

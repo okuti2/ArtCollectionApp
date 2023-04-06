@@ -2,6 +2,7 @@ import { favouritesAtom } from "@/store";
 import { useAtom } from "jotai";
 import { Row, Col, Card } from "react-bootstrap";
 import ArtworkCard from "@/components/ArtworkCard";
+import LoadPage from "@/components/LoadPage";
 
 export default function Favourites(){
     const [favouritesList, setFavouritesList] = useAtom(favouritesAtom);

@@ -5,6 +5,7 @@ import ArtworkCard from '@/components/ArtworkCard.js';
 import {Card, Pagination, Row, Col} from 'react-bootstrap';
 import LoadPage from '@/components/LoadPage';
 import validObjectIDList from '@/public/data/validObjectIDList.json';
+import Error from "next/error";
 
 const PER_PAGE = 12;
 
