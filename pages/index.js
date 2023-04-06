@@ -1,11 +1,11 @@
 /********************************************************************************* 
-*  WEB422 – Assignment 5 
-* I declare that this assignment is my own work in accordance with Seneca Academic Policy.   
+*  WEB422 – Assignment 06 
+*  I declare that this assignment is my own work in accordance with Seneca Academic Policy.   
 *  No part of this assignment has been copied manually or electronically from any other source 
 *  (including web sites) or distributed to other students. 
 *  
-*  Name: Olutoyosi Kuti Student ID: 102633211 Date: 15th March 2023 
-*  NEXT_PUBLIC_API_URL: https://cute-puce-earthworm-shoe.cyclic.app/api/user
+*  Name: Olutoyosi Kuti Student ID: 102633211 Date: 6th April 2023 
+*  Vercel App (Deployed) Link: https://art-collection-app.vercel.app/
 * 
 ********************************************************************************/  
 
