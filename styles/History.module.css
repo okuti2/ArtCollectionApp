@@ -1,0 +1,4 @@
+.historyListItem:hover{     
+    background-color: rgb(94, 170, 233);     
+    cursor:pointer; 
+} 
